@@ -138,16 +138,11 @@ class ScheduleManager:
 
 
 if __name__ == '__main__':
-    manager = ScheduleManager()
-
-    # 초기 활동 등록
-    print(manager.add_activity("월요일", "10:00", "11:00", "국어 수업", "교사"))
-    print(manager.add_activity("월요일", "13:00", "14:00", "수학 자습", "학생"))
-    print(manager.add_activity("수요일", "19:00", "20:00", "물리 정리 자습", "학생"))
     # --- 자동화된 테스트 시나리오 ---
+    # 웹 애플리케이션으로 실행될 때는 이 부분이 실행되지 않습니다.
+    # schedule_manager.py를 직접 실행할 때만 아래 테스트 코드가 동작합니다.
     manager = ScheduleManager()
-    print("===== 자동화된 테스트 시나리오 시작 =====")
-
+    print("===== ScheduleManager 자동화된 테스트 시나리오 시작 =====")
     # 1. 초기 활동 등록
     print("\n[테스트 1: 초기 활동 등록]")
     print(f"월요일 10:00-11:00 '국어 수업'(교사) 등록: {manager.add_activity('월요일', '10:00', '11:00', '국어 수업', '교사')}")
